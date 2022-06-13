@@ -86,7 +86,7 @@ namespace DAOProgra.Implementacion
 
         public DataTable SelectEstudianteHabilidad(string busqueda)
         {
-            string query = @"SELECT id as ID,CONCAT(nombre,' ',primerApellido,' ',ISNULL(segundoApellido,''))as 'Nombre',nivel as Nivel,puntosFuertes AS Habilidades FROM Estudiante WHERE estado = 1 AND puntosFuertes LIKE '%"+ busqueda +"%'";
+            string query = @"SELECT id as ID,CONCAT(nombre,' ',primerApellido,' ',ISNULL(segundoApellido,''))as 'Nombre',nivel as Nivel,puntosFuertes AS Habilidades FROM Estudiante WHERE estado = 1 AND puntosFuertes LIKE '%"+ busqueda + "%' AND ISNULL(idEquipo,-1)=-1";
             SqlCommand command = CreateCommand(query);
             try
             {
