@@ -1,101 +1,109 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="DAOProgra.Implementacion.BaseImpl" Collapsed="true">
-    <Position X="9" Y="2" Width="1.5" />
+  <Class Name="DAOProgra.Implementacion.BaseImpl">
+    <Position X="5" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AIAAAAAAAAICAAgAAgAEAABAAAAACAAAAAAAACAAAAA=</HashCode>
       <FileName>Implementacion\BaseImpl.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DAOProgra.Implementacion.CategoriaImpl" Collapsed="true">
-    <Position X="6.75" Y="3.25" Width="1.5" />
+  <Class Name="DAOProgra.Implementacion.CategoriaImpl">
+    <Position X="2.75" Y="9.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAEAAAAAAAAAAACAAAAAAAAEAAAAAAAAAQAAAAAA=</HashCode>
       <FileName>Implementacion\CategoriaImpl.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="DAOProgra.Implementacion.Config" Collapsed="true">
-    <Position X="14" Y="2" Width="1.5" />
+  <Class Name="DAOProgra.Implementacion.Config">
+    <Position X="14.25" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
       <FileName>Implementacion\Config.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DAOProgra.Implementacion.Controladores" Collapsed="true">
-    <Position X="14" Y="3" Width="1.5" />
+  <Class Name="DAOProgra.Implementacion.Controladores">
+    <Position X="12.5" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABAAgAAAACAAAAAAACAA=</HashCode>
       <FileName>Implementacion\Controladores.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DAOProgra.Implementacion.EquipoImpl" Collapsed="true">
-    <Position X="9" Y="3.25" Width="1.5" />
+  <Class Name="DAOProgra.Implementacion.EquipoImpl">
+    <Position X="5" Y="9.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAEAAAAAAAAAAAAAAQAAAAAEAAAAAAAAARAAAAAA=</HashCode>
       <FileName>Implementacion\EquipoImpl.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="DAOProgra.Implementacion.EstudianteImpl" Collapsed="true">
-    <Position X="11.25" Y="3.25" Width="1.5" />
+  <Class Name="DAOProgra.Implementacion.EstudianteImpl">
+    <Position X="7.5" Y="9.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAEAAACAIAABAAAAAAAAAAAEAAAAAAAAAQAAAAAA=</HashCode>
       <FileName>Implementacion\EstudianteImpl.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="DAOProgra.Modelo.BaseModel" Collapsed="true">
-    <Position X="7.5" Y="4.25" Width="1.5" />
+  <Class Name="DAOProgra.Modelo.BaseModel">
+    <Position X="12" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAEAAAAAAAAAAAAAAAQAQAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Modelo\BaseModel.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DAOProgra.Modelo.Categoria" Collapsed="true">
-    <Position X="7.5" Y="5.5" Width="1.5" />
+  <Class Name="DAOProgra.Modelo.Categoria">
+    <Position X="12" Y="9.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAABAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Modelo\Categoria.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DAOProgra.Modelo.Equipo" Collapsed="true">
-    <Position X="5.25" Y="5.5" Width="1.5" />
+  <Class Name="DAOProgra.Modelo.Equipo">
+    <Position X="10" Y="9.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAgAAABgAAAAEAAAAAAAAAAAAQAAAA=</HashCode>
       <FileName>Modelo\Equipo.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DAOProgra.Modelo.Estudiante" Collapsed="true">
-    <Position X="9.75" Y="5.5" Width="1.5" />
+  <Class Name="DAOProgra.Modelo.Estudiante">
+    <Position X="14" Y="9.75" Width="1.5" />
+    <InheritanceLine Type="DAOProgra.Modelo.BaseModel" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="12.75" Y="8.44" />
+        <Point X="12.75" Y="9.375" />
+        <Point X="15" Y="9.375" />
+        <Point X="15" Y="9.75" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAACAAAABAAAAAAAAAAAoAAAABAAEAAAAAAAAAAAQAA=</HashCode>
       <FileName>Modelo\Estudiante.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Interface Name="DAOProgra.interfaces.IBase&lt;T&gt;" Collapsed="true">
-    <Position X="14" Y="4" Width="1.5" />
+  <Interface Name="DAOProgra.interfaces.IBase&lt;T&gt;">
+    <Position X="18.25" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAEAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAQAAAAAA=</HashCode>
       <FileName>interfaces\IBase.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="DAOProgra.interfaces.Icategoria" Collapsed="true">
-    <Position X="14" Y="5.5" Width="1.5" />
+  <Interface Name="DAOProgra.interfaces.Icategoria">
+    <Position X="18.25" Y="9.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>interfaces\Icategoria.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="DAOProgra.interfaces.IEquipo" Collapsed="true">
-    <Position X="11.75" Y="5.5" Width="1.5" />
+  <Interface Name="DAOProgra.interfaces.IEquipo">
+    <Position X="16" Y="9.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>interfaces\IEquipo.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="DAOProgra.interfaces.IEstudiante" Collapsed="true">
-    <Position X="16.25" Y="5.5" Width="1.5" />
+  <Interface Name="DAOProgra.interfaces.IEstudiante">
+    <Position X="20.5" Y="9.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>interfaces\IEstudiante.cs</FileName>
