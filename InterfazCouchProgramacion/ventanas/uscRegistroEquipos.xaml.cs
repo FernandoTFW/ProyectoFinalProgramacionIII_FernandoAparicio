@@ -156,10 +156,16 @@ namespace InterfazCouchProgramacion.ventanas
             Equipo eq = new Equipo(txbNombre.Text, short.Parse(cmbCategoria.SelectedValue.ToString()), listaEstudiantes);
             try
             {
-                File.Copy(pathFoto, Config.pathFotoEquipo + equipoImpl.LastIndex("Equipo") + ".jpg");
-                equipoImpl.Insert(eq);
-                MessageBox.Show("Equipo Registrado Con Exito");
-                volver();
+                if (txbNombre.Text != "")
+                {
+                    File.Copy(pathFoto, Config.pathFotoEquipo + equipoImpl.LastIndex("Equipo") + ".jpg");
+                    equipoImpl.Insert(eq);
+                    MessageBox.Show("Equipo Registrado Con Exito");
+                    volver();
+                }
+                else
+                    MessageBox.Show("Llene el espacio de el nombre");
+                
                 
             }
             catch (Exception)

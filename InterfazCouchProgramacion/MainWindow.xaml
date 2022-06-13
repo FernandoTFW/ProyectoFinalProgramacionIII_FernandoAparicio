@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:InterfazCouchProgramacion"
         mc:Ignorable="d"
-        Title="MainWindow" Height="571.263" Width="1005.541" Loaded="Window_Loaded">
+        Title="MainWindow" Height="611.016" Width="1005.541" Loaded="Window_Loaded">
     <Grid>
         <Grid Background="BlueViolet" Height="50" VerticalAlignment="Top">
             <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25" Foreground="White" FontWeight="ExtraBold" Margin="0,0,0,0">Bienvenido</TextBlock>

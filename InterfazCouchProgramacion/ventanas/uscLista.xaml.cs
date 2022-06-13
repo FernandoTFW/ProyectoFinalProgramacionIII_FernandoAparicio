@@ -32,27 +32,30 @@ namespace InterfazCouchProgramacion.ventanas
 
         private void btnLider_Click(object sender, RoutedEventArgs e)
         {
+            if(dgvEquipos.SelectedItem != null)
+            {
+                DataRowView d = (DataRowView)dgvEquipos.SelectedItem;
+                short id = short.Parse(d.Row.ItemArray[0].ToString());
+                Equipo eq = Controladores.controladorEquipo.get(id);
+
+                DataRowView drv = (DataRowView)dgvIntegrantes.SelectedItem;
+                short idLider = short.Parse(drv.Row.ItemArray[0].ToString());
+
+                eq.Lider = idLider;
+
+                try
+                {
+                    Controladores.controladorEquipo.UpdateLider(eq);
+                    MessageBox.Show("Se Ha designado El lider del equipo: " + eq.Nombre);
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }
+                refreshEquipos();
+            }
             
-            DataRowView d = (DataRowView)dgvEquipos.SelectedItem;
-            short id = short.Parse(d.Row.ItemArray[0].ToString());
-            Equipo eq = Controladores.controladorEquipo.get(id);
-
-            DataRowView drv = (DataRowView)dgvIntegrantes.SelectedItem;
-            short idLider = short.Parse(drv.Row.ItemArray[0].ToString());
-
-            eq.Lider = idLider;
-
-            try
-            {
-                Controladores.controladorEquipo.UpdateLider(eq);
-                MessageBox.Show("Se Ha designado El lider del equipo: " + eq.Nombre);
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-            refreshEquipos();
 
         }
 
@@ -76,6 +79,7 @@ namespace InterfazCouchProgramacion.ventanas
                 Equipo eq = Controladores.controladorEquipo.get(id);
                 txtNombre.Text = "Nombre del Equipo: " + eq.Nombre;
                 txtCategoria.Text = "Categoría: " + eq.NombreCategoria;
+                imgFoto.Source = new BitmapImage(new Uri(Config.pathFotoEquipo + eq.Id + ".jpg"));
                 dgvIntegrantes.ItemsSource = Controladores.controladorEstudiante.SelectEstudianteHabilidad(id).DefaultView;
                 dgvIntegrantes.Columns[1].Visibility = Visibility.Collapsed;
 

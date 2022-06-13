@@ -4,14 +4,13 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:InterfazCouchProgramacion.ventanas"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800" Loaded="UserControl_Loaded">
+             mc:Ignorable="d" d:DesignWidth="800" Loaded="UserControl_Loaded" Height="481">
     <Grid Background="White">
         <Grid Background="BlueViolet" Height="800" Width="40" Margin="0,0,0,0" HorizontalAlignment="Left"/>
         <Grid Background="BlueViolet" Height="800" Width="40" Margin="0,0,0,0" HorizontalAlignment="Right"/>
         <StackPanel Orientation="Horizontal" Width="720" Margin="0,20,0,0">
             <StackPanel Margin="30,0,30,0">
-                <Image Width="150" Height="150"></Image>
+                <Image x:Name="imgFoto" Width="150" Height="150"></Image>
                 <TextBlock x:Name="txtNombre" Margin="5" Text="Nombre del Equipo"/>
                 <TextBlock x:Name="txtCategoria" Margin="5" Text="Categoría"/>
                 <TextBlock Margin="5" Text="Integrantes"/>
@@ -31,7 +30,7 @@
             </StackPanel>
             <StackPanel VerticalAlignment="Center">
                 <TextBlock Margin="5" Text="Equipos" HorizontalAlignment="Center"/>
-                <DataGrid x:Name="dgvEquipos" Width="300" Height="222" CanUserAddRows="False" SelectionChanged="dgvEquipos_SelectionChanged">
+                <DataGrid x:Name="dgvEquipos" Width="300" Height="222" CanUserAddRows="False" IsReadOnly="True" SelectionChanged="dgvEquipos_SelectionChanged">
 
                 </DataGrid>
             </StackPanel>

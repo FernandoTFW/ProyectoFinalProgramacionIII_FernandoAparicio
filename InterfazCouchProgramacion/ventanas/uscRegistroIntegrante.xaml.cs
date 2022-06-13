@@ -32,7 +32,10 @@ namespace InterfazCouchProgramacion.ventanas
         {
             try
             {
-                Controladores.controladorEstudiante.Insert(new Estudiante(txtnombre.Text, txtPrimerApellido.Text, txtSegundoApellido.Text, txtHabilidades.Text, cmbNivel.Text));
+                if (txtnombre.Text != "" && txtPrimerApellido.Text != "" && txtSegundoApellido.Text != "" && txtHabilidades.Text != "")
+                    Controladores.controladorEstudiante.Insert(new Estudiante(txtnombre.Text, txtPrimerApellido.Text, txtSegundoApellido.Text, txtHabilidades.Text, cmbNivel.Text));
+                else
+                    MessageBox.Show("Llene todos los espacios");
             }
             catch (Exception)
             {
